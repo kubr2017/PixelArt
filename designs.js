@@ -2,7 +2,11 @@
 // Select size input
 
 function buildGrid(){
-  console.log("buildGrid started!");
+//   alert("Hello!");
+
+var gridHeight = document.getElementById("inputHeight");
+var gridWidth = document.getElementById("inputWidth");
+alert("Height:"+gridHeight.value+" Width:"+gridWidth.value);
 }
 
 // When size is submitted by the user, call makeGrid()
