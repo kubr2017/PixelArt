@@ -6,17 +6,16 @@ function buildGrid(){
   var gridHeight = document.getElementById("inputHeight");
   var gridWidth = document.getElementById("inputWidth");
   //alert("Height:"+gridHeight.value+" Width:"+gridWidth.value);
-  var tbl = document.createElement("table");
+  var tbl = document.getElementById("pixelCanvas");
   for (var j= 0; j<=gridWidth.value;j++){
     var row = document.createElement("tr");
-    for (var i = 0; i<=grid.Height.value;i++){
+    for (var i = 0; i<=gridHeight.value;i++){
       var cell = document.createElement("td");
       row.appendChild(cell);
     }
     tbl.appendChild(row);
   }
-  var body = document.getElementsByTagName("body")[0];
-  body.appendChild(tbl);
+  
 
 }
 
