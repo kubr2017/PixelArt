@@ -11,7 +11,7 @@ function buildGrid(){
     var row = document.createElement("tr");
     for (var i = 1; i<=gridWidth.value;i++){
       var cell = document.createElement("td");
-      var cellText = document.createTextNode("row "+j+", column "+i);
+      var cellText = document.createTextNode(" ");
 
                 cell.appendChild(cellText);
       row.appendChild(cell);
