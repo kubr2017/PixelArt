@@ -1,4 +1,8 @@
 // Select color input
+function pickUpColor(){
+  var picker = document.getElementById("colorPicker");
+  alert(picker.value);
+}
 // Select size input
 
 function buildGrid(){
@@ -12,8 +16,7 @@ function buildGrid(){
     for (var i = 1; i<=gridWidth.value;i++){
       var cell = document.createElement("td");
       var cellText = document.createTextNode(" ");
-
-                cell.appendChild(cellText);
+      cell.appendChild(cellText);
       row.appendChild(cell);
     }
     tbl.appendChild(row);
