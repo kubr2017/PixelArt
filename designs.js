@@ -1,8 +1,10 @@
 // Select color input
-function pickUpColor(){
-  var picker = document.getElementById("colorPicker");
-  alert(this);
-}
+
+var picker = document.getElementById("colorPicker");
+var color;
+picker.addEventListener("input",function(){color = picker.value;});
+
+
 // Select size input
 
 function buildGrid(){
