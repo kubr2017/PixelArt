@@ -1,7 +1,7 @@
 // Select color input
 function pickUpColor(){
   var picker = document.getElementById("colorPicker");
-  alert(picker.value);
+  alert(this);
 }
 // Select size input
 
