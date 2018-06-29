@@ -24,16 +24,11 @@ function buildGrid(){
     }
     tbl.appendChild(row);
   }
-
 }
-
 
 function makeGrid(evt) {
   // Your code goes here!
 
 var target = evt.target;
 target.style.backgroundColor = color;
-
-
-
 }
