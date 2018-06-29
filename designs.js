@@ -1,8 +1,10 @@
 // Select color input
 
 var picker = document.getElementById("colorPicker");
-var color;
+var color = "black";
 picker.addEventListener("input",function(){color = picker.value;});
+var table = document.getElementById("pixelCanvas");
+table.addEventListener("click",makeGrid);
 
 
 // Select size input
@@ -28,7 +30,7 @@ function buildGrid(){
 
 // When size is submitted by the user, call makeGrid()
 
-function makeGrid() {
+function makeGrid(evt) {
   // Your code goes here!
 
   //Example:
@@ -58,6 +60,15 @@ function makeGrid() {
 //         console.log('A span was clicked with text ' + evt.target.textContent);
 //     }
 // });
+
+//Example styles
+
+// const mainHeading = document.querySelector('h1');
+//
+// mainHeading.style.color = 'red';
+
+var target = evt.target;
+target.style.backgroundColor = color;
 
 
 
