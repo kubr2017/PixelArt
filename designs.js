@@ -1,7 +1,7 @@
 // Select color input
 
 var picker = document.getElementById("colorPicker");
-var color = "black";
+var color = picker.value;
 picker.addEventListener("input",function(){color = picker.value;});
 var table = document.getElementById("pixelCanvas");
 table.addEventListener("click",makeGrid);
