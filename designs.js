@@ -18,14 +18,12 @@ function buildGrid(){
     var row = document.createElement("tr");
     for (var i = 1; i<=gridWidth.value;i++){
       var cell = document.createElement("td");
-      var cellText = document.createTextNode(" ");
-      cell.appendChild(cellText);
       row.appendChild(cell);
     }
     tbl.appendChild(row);
   }
 }
-
+ci
 function makeGrid(evt) {
   // Your code goes here!
 
